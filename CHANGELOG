@@ -1,0 +1,12 @@
+# Changelog
+
+## v0.1.0 (2023-07-29)
+
+### Documentation
+
+- Fix typo in readme.md (#2) ([`4e4c212`](https://github.com/34j/jinja2-eval/commit/4e4c2128ac28a4641be492366323db9611c36c35))
+- Add @34j as a contributor ([`8c82b23`](https://github.com/34j/jinja2-eval/commit/8c82b23a3d61b5a462f78deb9689155f795027ec))
+
+### Feature
+
+- Add main feat (#1) ([`92963a5`](https://github.com/34j/jinja2-eval/commit/92963a5862f8f7a5959311f1d39bb463a6a64ee0))
