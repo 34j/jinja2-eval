@@ -49,17 +49,17 @@ Basic usage:
 {{ "1 + 1" | eval }}
 ```
 
-````text
+```text
 2
 2
-``
+```
 
 Importing modules:
 
 ```jinja2
 {% eval "exec('import math') or math.pi" %}
 {{ "exec('import math') or math.pi" | eval }}
-````
+```
 
 ```text
 3.141592653589793
