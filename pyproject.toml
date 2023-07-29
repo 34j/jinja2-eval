@@ -42,9 +42,18 @@ sphinx-rtd-theme = ">=1.0"
 
 [tool.semantic_release]
 branch = "main"
-version_toml = "pyproject.toml:tool.poetry.version"
+version_toml = ["pyproject.toml:tool.poetry.version"]
 version_variable = "src/jinja2_eval/__init__.py:__version__"
 build_command = "pip install poetry && poetry build"
+
+[tool.semantic_release.changelog]
+exclude_commit_patterns = [
+    "chore*",
+    "ci*",
+]
+
+[tool.semantic_release.changelog.environment]
+keep_trailing_newline = true
 
 [tool.pytest.ini_options]
 addopts = "-v -Wdefault --cov=jinja2_eval --cov-report=term-missing:skip-covered"

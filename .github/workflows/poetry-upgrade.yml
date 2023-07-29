@@ -1,12 +1,27 @@
+<<<<<<< before updating
 name: Upgrader
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "26 22 11 * *"
+    - cron: "20 4 27 * *"
 
 jobs:
   upgrade:
     uses: browniebroke/github-actions/.github/workflows/poetry-upgrade.yml@v1
     secrets:
       gh_pat: ${{ secrets.GH_PAT }}
+=======
+name: Upgrader
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "32 6 24 * *"
+
+jobs:
+  upgrade:
+    uses: browniebroke/github-actions/.github/workflows/poetry-upgrade.yml@v1
+    secrets:
+      gh_pat: ${{ secrets.GH_PAT }}
+>>>>>>> after updating
