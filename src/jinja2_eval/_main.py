@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from typing import Any, Mapping
 
 from jinja2 import Environment, nodes
