@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "jinja2-eval"
 version = "0.0.0"
-description = "Jinja2 Extension for getting eval() result"
+description = "Jinja2 Extension for getting eval() result."
 authors = ["34j <34j.95a2p@simplelogin.com>"]
 license = "CC0 1.0 Universal"
 readme = "README.md"
@@ -24,11 +24,13 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.8"
+jinja2 = "*"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = ">=3"
 pytest = "^7.0"
 pytest-cov = "^3.0"
+parameterized = "^0.9.0"
 
 [tool.poetry.group.docs]
 optional = true

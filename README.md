@@ -30,7 +30,7 @@
   <img src="https://img.shields.io/pypi/l/jinja2-eval.svg?style=flat-square" alt="License">
 </p>
 
-Jinja2 Extension for getting eval() result
+Jinja2 Extension for getting `eval()` result.
 
 ## Installation
 
@@ -38,6 +38,32 @@ Install this via pip (or your favourite package manager):
 
 ```shell
 pip install jinja2-eval
+```
+
+## Usage
+
+Basic usage:
+
+```jinja2
+{% eval "1 + 1" %}
+{{ "1 + 1" | eval }}
+```
+
+````text
+2
+2
+``
+
+Importing modules:
+
+```jinja2
+{% eval "exec('import math') or math.pi" %}
+{{ "exec('import math') or math.pi" | eval }}
+````
+
+```text
+3.141592653589793
+3.141592653589793
 ```
 
 ## Contributors ✨

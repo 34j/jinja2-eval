@@ -516,6 +516,20 @@ files = [
 ]
 
 [[package]]
+name = "parameterized"
+version = "0.9.0"
+description = "Parameterized testing with any Python test framework"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "parameterized-0.9.0-py2.py3-none-any.whl", hash = "sha256:4e0758e3d41bea3bbd05ec14fc2c24736723f243b28d702081aef438c9372b1b"},
+    {file = "parameterized-0.9.0.tar.gz", hash = "sha256:7fc905272cefa4f364c1a3429cbbe9c0f98b793988efb5bf90aac80f08db09b1"},
+]
+
+[package.extras]
+dev = ["jinja2"]
+
+[[package]]
 name = "platformdirs"
 version = "3.9.1"
 description = "A small Python package for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
@@ -948,4 +962,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "00ead3f7489284d54fc74f838a5e9bd73104f481af5e426ab337ee6aaa6b2989"
+content-hash = "9aeffce0c6938ccb98e376b01d6014a666abcf569261ebde7ced0c060e61dabd"
