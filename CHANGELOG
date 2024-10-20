@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.1.2 (2024-10-20)
+
+### Fix
+
+- Update dependency jinja2 to v3.1.4 (#76) ([`d0309a3`](https://github.com/34j/jinja2-eval/commit/d0309a3c70c3a41057f359c410c72c38e544ed38))
+
 ## v0.1.1 (2024-01-11)
 
 ### Fix
