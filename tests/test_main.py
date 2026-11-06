@@ -23,16 +23,14 @@ class TestMain(TestCase):
     expected: str
 
     def setUp(self):
-        self.environment = Environment(extensions=["jinja2_eval.EvalExtension"])
+        self.environment = Environment(  # noqa: S701
+            extensions=["jinja2_eval.EvalExtension"]
+        )
 
     def test_statement(self):
-        template = self.environment.from_string(
-            "{% eval " + f'"{self.command}"' + " %}"
-        )
-        self.assertEqual(template.render(), self.expected)
+        template = self.environment.from_string("{% eval " + f'"{self.command}"' + " %}")
+        assert template.render() == self.expected
 
     def test_expression(self):
-        template = self.environment.from_string(
-            "{{ " + f'"{self.command}"' + " | eval }}"
-        )
-        self.assertEqual(template.render(), self.expected)
+        template = self.environment.from_string("{{ " + f'"{self.command}"' + " | eval }}")
+        assert template.render() == self.expected
