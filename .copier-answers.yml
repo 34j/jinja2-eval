@@ -16,4 +16,3 @@ run_uv_sync: false
 setup_pre_commit: false
 user_name: 34j
 version: 0.1.2
-
