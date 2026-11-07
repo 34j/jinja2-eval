@@ -4,7 +4,7 @@ requires = [ "setuptools>=77.0.3" ]
 
 [project]
 name = "jinja2-eval"
-version = "0.1.2"
+version = "1.0.0"
 description = "Jinja2 Extension for getting eval() result."
 readme = "README.md"
 license = "CC0-1.0"
